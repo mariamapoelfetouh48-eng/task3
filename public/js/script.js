@@ -20,8 +20,10 @@ formElement.addEventListener("submit", async (e) => {
         if (data.error) {
             errorElement.innerText = data.error
         } else {
-            locationElement.innerText = data.location
-            forecastElement.innerText = data.forecast
+            locationElement.innerText = "Country: " + data.country +
+                "\nLatitude: " + data.latitude +
+                "\nLongitude: " + data.longitude
+            forecastElement.innerText = "Temperature: " + data.temperature + "°C"
         }
     } catch (error) {
         errorElement.innerText = "Unable to connect to weather service!"
