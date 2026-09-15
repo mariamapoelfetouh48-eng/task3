@@ -9,19 +9,18 @@
 <body>
     {{>header}}
 
-    <div class="container">
-        <h1>{{title}}</h1>
-        <p>{{desc}}</p>
+    <h1>{{title}}</h1>
+    <hr>
+    <p>{{desc}}</p>
 
-        <form id="form1">
-            <input id="address" type="text" placeholder="Enter a location">
-            <button>Search</button>
-        </form>
+    <form id="form1">
+        <input type="text" id="address" placeholder="Enter a location">
+        <button>Search</button>
+    </form>
 
-        <p id="location"></p>
-        <p id="forecast"></p>
-        <p id="error"></p>
-    </div>
+    <p id="location"></p>
+    <p id="forecast"></p>
+    <p id="error"></p>
 
     <script src="/js/script.js"></script>
 </body>

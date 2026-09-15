@@ -29,14 +29,18 @@ app.get("", (req, res) => {
 app.get("/service", (req, res) => {
     res.render("service", {
         title: "SERVICE",
-        desc: "This is service page"
+        name: "Mohamed",
+        city: "Cairo",
+        age: 40
     })
 })
 
 app.get("/team", (req, res) => {
     res.render("team", {
         title: "TEAM",
-        desc: "This is team page"
+        name: "Reem",
+        city: "Mansoura",
+        age: 25
     })
 })
 
