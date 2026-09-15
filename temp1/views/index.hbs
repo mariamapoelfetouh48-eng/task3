@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     {{>header}}
 
-    <h1>{{title}}</h1>
-    <hr>
-    <p>{{desc}}</p>
+    <div class="content">
+        <h1>{{title}}</h1>
+        <hr>
+        <p>{{desc}}</p>
 
-    <form id="form1">
-        <input type="text" id="address" placeholder="Enter a location">
-        <button>Search</button>
-    </form>
+        <form id="form1">
+            <input type="text" id="address" placeholder="Enter a location">
+            <button>Search</button>
+        </form>
 
-    <p id="location"></p>
-    <p id="forecast"></p>
-    <p id="error"></p>
+        <p id="location"></p>
+        <p id="forecast"></p>
+        <p id="error"></p>
+    </div>
 
     <script src="/js/script.js"></script>
 </body>

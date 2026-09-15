@@ -1,7 +1,8 @@
 const request = require("request")
+const keys = require("./keys")
 
 const forecast = (latitude, longitude, callback) => {
-    const url = "http://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY&q=" + latitude + "," + longitude
+    const url = "https://api.weatherapi.com/v1/current.json?key=" + keys.weatherApiKey + "&q=" + latitude + "," + longitude
 
     request({ url: url, json: true }, (error, response) => {
         if (error) {
